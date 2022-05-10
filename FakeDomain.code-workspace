@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{
+			"name": "./FakeAdmin",
+			"path": "./"
+		},
+		{
+			"name": "PgAdmin 4",
+			"path": "./tools/pgadmin4"
+		},
+		{
+			"name": "Sources",
+			"path": "./src"
+		},
+		{
+			"name": "Tests",
+			"path": "./tests"
+		}
+	],
+	"settings": {},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Run PgAdmin 4",
+				"type": "process",
+				"command": "make",
+				"args": [
+					"pgadmin"
+				]
+			},
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "msedge",
+				"request": "launch",
+				"name": "Open PgAdmin 4",
+				"url": "http://localhost:15432",
+				"preLaunchTask": "Run PgAdmin 4",
+			}
+		]
+	}
+}

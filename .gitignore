@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 !**/.gitkeep
+tools/pgadmin4/**/*
+!tools/pgadmin4/docker-compose.pgadmin4.yml
